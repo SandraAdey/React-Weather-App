@@ -4,6 +4,7 @@ import axios from 'axios'
 function App() {
   const [data,setData] = useState({})
   const [location, setLocation] = useState('')
+  
 
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=103666d5252e5abf754527cd2f707b91`;
 
@@ -35,7 +36,7 @@ function App() {
             <p>{data.name}</p>
           </div>
           <div className="temp">
-            {data.main ? <h1>{data.main.temp.toFixed()}°C</h1> : null}
+            {data.main ? <h1>{data.main.temp.toFixed()}°F</h1> : null}
           </div>
           <div className="description">
             {data.weather ? <p>{data.weather[0].main}</p> : null}
@@ -48,7 +49,7 @@ function App() {
               {data.main ? (
                 <p className="bold">{data.main.feels_like.toFixed()}°F</p>
               ) : null}
-              <p>feels like</p>
+              <p>Feels like</p>
             </div>
             <div className="humidity">
               {data.main ? <p className="bold">{data.main.humidity}%</p> : null}
@@ -58,7 +59,7 @@ function App() {
               {data.wind ? (
                 <p className="bold">{data.wind.speed.toFixed()} MPH</p>
               ) : null}
-              <p>wind speed</p>
+              <p>Wind speed</p>
             </div>
           </div>
         )}
