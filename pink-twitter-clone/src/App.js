@@ -19,7 +19,8 @@ function App() {
 
   return (
     <div className="app">
-      <div className="search">
+      <div className="container">
+       <div className="search">
         <input
           value={location}
           onChange={(event) => setLocation(event.target.value)}
@@ -28,7 +29,7 @@ function App() {
           type="text"
         />
       </div>
-      <div className="container">
+      
         <div className="top">
           <div className="location">
             <p>{data.name}</p>

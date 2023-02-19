@@ -6,6 +6,7 @@
   padding: 0;
 }
 
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Poppins', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -22,14 +23,21 @@ p {
 h1 {
   font: 6rem;
 }
+.container {
+  box-shadow: 0px 0px 12px #ccc;
+  border-radius: 20px;
+  padding: 1rem;
+ 
 
+}
 .app {
   width: 100%;
-  height: 100vh;
+  height: 200vh;
   position: relative;
   background-color: rgba(0,0,0,0.4);
   color: #fff;
 }
+
 
 .app:before{
   content: '';
@@ -50,7 +58,7 @@ h1 {
 .app input {
   padding: .7rem 1.5rem;
   font-size: 1.2rem;
-  border-radius: 25px;
+  border-radius: 10px;
   border: 1px solid rgba(255,255,255, 0.8);
   background: rgba(255,255,255, 0.1);
   color: #f8f8f8;
@@ -61,6 +69,7 @@ h1 {
 }
 
 .container {
+  background: url('./assets/land.jpeg') ;
   max-width: 700px;
   height: 700px;
   margin: auto;
@@ -73,8 +82,9 @@ h1 {
 }
 
 .app .top {
-  width: 100%;
+  width: 50%;
   margin: 1rem auto;
+  font-size: 30px;
 }
 
 .app .description {
@@ -82,15 +92,16 @@ h1 {
   right: -90%;
   transform-origin: 0 0;
   transform: rotate(269deg);
+  
 }
 
 .app .bottom {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   text-align: center;
   width: 100%;
-  margin: 1rem auto;
-  padding: 1rem;
+  margin: 3rem auto;
+  padding: 3rem;
   border-radius: 12px;
   background-color: rgba(255,255,255, 0.2);
 }
