@@ -1,3 +1,3 @@
 # React-Weather-App
 
-https://aesthetic-medovik-47667c.netlify.app
+https://snazzy-nasturtium-e77563.netlify.app/
